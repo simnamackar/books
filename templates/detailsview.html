@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h3><b>BOOK DETAILS</b></h3>
+<div class="card" style="width: 18rem;">
+  <img src="{{ book.image.url }}" class="card-img-top" alt="...">
+  <div class="card-body">
+      <p class="card-text">{{ book.title}}</p>
+      <p class="card-text">{{ book.price}}</p>
+
+  </div>
+</div>
+<br>
+
+
+{% endblock %}

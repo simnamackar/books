@@ -1,0 +1,16 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h3 style="color:red"><b>UPDATE BOOK</b></h3>
+<form action=""method="post">
+    {% csrf_token %}
+<!--    <label for="">book name</label>-->
+<!--    <input type="text" name="title" placeholder="enter the book name" value="{{book.title}}">-->
+<!--    <label for="">price</label>-->
+<!--    <input type="text" name="price" placeholder="enter the price" value="{{book.price}}">-->
+    {{ form.as_p }}
+    <input type="submit" value="update"class="btn btn-success">
+</form>
+{% endblock %}
